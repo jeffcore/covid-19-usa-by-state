@@ -2,6 +2,8 @@
 
 COVID-19 data USA States by day. All data from Johns Hopkins https://coronavirus.jhu.edu
 
+Last Updated: 3/26/20
+
 ## Files
 
 1. COVID-19-Confirmed-Cases-USA-By-State.csv - CSV file of daily total confirmed cases in the USA by state.
