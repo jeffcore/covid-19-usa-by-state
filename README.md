@@ -16,5 +16,6 @@ Last Updated: 3/27/20
 2. COVID-19-Deaths-USA-By-State.csv - CSV file of and daily total confirmed deaths in the USA by state.
 3. Daily-Total-Cases-Data-Process.ipynb - python notebook for processing Johns Hopkins daily files into aggregated file.
 4. Daily-Total-Deaths-Data-Process.ipynb - python notebook for processing Johns Hopkins daily files into aggregated file.
-5. download-jh-data.py - python script to automate downloading the daily file from the John Hopkins repo.
+5. download-jh-data.py - python script to automate downloading the daily file from the John Hopkins repo.  
+
 This data is not new cases per day, but total running cases per day.
