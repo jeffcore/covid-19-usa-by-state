@@ -8,7 +8,7 @@ daily files and combines all the data into two csv files (confirmed cases and de
 Rows: State Name  
 Columns: Date   
 
-Last Updated: 3/26/20
+Last Updated: 3/27/20
 
 ## Files
 
