@@ -3,10 +3,10 @@
 COVID-19 data USA States by day. All data from Johns Hopkins https://coronavirus.jhu.edu
 
 The raw data from Johns Hopkins is organized by county, state, country. Also each day is a new file. This repo takes the  
-daily files and combines all the data into two csv files (confirmed cases and deaths).  
-  
+daily files and combines all the data into two csv files (confirmed cases and deaths). Daily data is accumulated, not new cases/deaths per day.  
+
 Rows: State Name  
-Columns: Date   
+Columns: Date  
 
 Last Updated: 3/27/20
 
@@ -17,5 +17,3 @@ Last Updated: 3/27/20
 3. Daily-Total-Cases-Data-Process.ipynb - python notebook for processing Johns Hopkins daily files into aggregated file.
 4. Daily-Total-Deaths-Data-Process.ipynb - python notebook for processing Johns Hopkins daily files into aggregated file.
 5. download-jh-data.py - python script to automate downloading the daily file from the John Hopkins repo.  
-
-This data is not new cases per day, but total running cases per day.
