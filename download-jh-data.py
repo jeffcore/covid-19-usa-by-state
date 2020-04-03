@@ -21,5 +21,5 @@ print('Lastest File: ' + latest_file)
 
 # copy file to my repo for processing
 print('Copying File')
-shutil.copy(latest_file, config.config['HOME_DIRECTORY'] +'/covid-19-usa-by-state/jh-daily-data/')
+shutil.copy(latest_file, config.config['HOME_DIRECTORY'] +'/covid-19-usa-by-state/data/')
    
