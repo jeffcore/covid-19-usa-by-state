@@ -22,4 +22,11 @@ print('Lastest File: ' + latest_file)
 # copy file to my repo for processing
 print('Copying File')
 shutil.copy(latest_file, config.config['HOME_DIRECTORY'] +'/covid-19-usa-by-state/data/')
-   
+  
+# update local repo
+subprocess.call('cd ../' + config.config['HOME_DIRECTORY'] + '/covid-19-data; git pull origin master', shell=True)
+
+# copy file to my repo for processing
+print('Copying File')
+shutil.copy(config.config['HOME_DIRECTORY'] + '/covid-19-data/us-counties.csv', config.config['HOME_DIRECTORY'] +'/covid-19-usa-by-state/data/')
+  

@@ -16,7 +16,7 @@ daily data and combines all the data into two csv files (confirmed cases and dea
 Rows: FIPS, County, State  
 Columns: Date  
 
-Last Updated: 4/2/20
+Last Updated: 4/3/20
 
 ## Files
 
