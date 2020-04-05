@@ -16,7 +16,7 @@ daily data and combines all the data into two csv files (confirmed cases and dea
 Rows: FIPS, County, State  
 Columns: Date  
 
-Last Updated: 4/3/20
+Last Updated: 4/4/20
 
 ## Files
 
@@ -26,4 +26,4 @@ Last Updated: 4/3/20
 4. COVID-19-Deaths-USA-By-County.csv - CSV file of and daily total confirmed deaths in the USA by county.
 5. Process-Daily-Files.ipynb - python notebook for processing Johns Hopkins daily files into aggregated files.
 6. Process-NYT-File.ipynb - python notebook for processing NYT file into aggregated files.
-7. download-jh-data.py - python script to automate downloading the daily file from the John Hopkins repo.  
+7. process-data.py - python script to automate downloading the daily files from github, processing and committing to this repo.
