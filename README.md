@@ -1,6 +1,6 @@
 # COVID-19
 
-COVID-19 data USA States by day. State data from Johns Hopkins https://coronavirus.jhu.edu . County Data from NYT https://github.com/nytimes/covid-19-data .
+COVID-19 data USA by States and Counties by day. State data from Johns Hopkins https://coronavirus.jhu.edu . County Data from NYT https://github.com/nytimes/covid-19-data .
 
 ## State Data
 The raw data from Johns Hopkins is organized by county, state, country. Also each day is a new file. This repo takes the  
