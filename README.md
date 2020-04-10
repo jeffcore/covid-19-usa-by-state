@@ -18,7 +18,7 @@ Columns: Date
 
 Johns Hopkins provides a similar time-series by county in their repo.
 
-Last Updated: 4/4/20
+Last Updated: 4/9/20
 
 ## Files
 
