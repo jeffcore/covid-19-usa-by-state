@@ -18,8 +18,6 @@ Columns: Date
 
 Johns Hopkins provides a similar time-series by county in their repo.
 
-Last Updated: 4/9/20
-
 ## Files
 
 1. COVID-19-Cases-USA-By-State.csv - CSV file of daily total confirmed cases in the USA by state - John Hopkins data
