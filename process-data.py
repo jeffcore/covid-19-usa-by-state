@@ -75,7 +75,7 @@ def process_states_data():
     print('processing state data')
     # configuration
     data_folder = './data/'
-    start_date = datetime.datetime(2020, 3, 22)
+    start_date = datetime.datetime(2020, 3, 22) # this is the date JH daily files were in the correct format for processing
     today_date = datetime.datetime.now()
     cases_datafile = 'COVID-19-Cases-USA-By-State.csv'
     cases_starter_datefile = data_folder + 'COVID-19-Cases-USA-By-State-Starter.csv'
