@@ -139,7 +139,8 @@ def process_states_data():
 
 def commit_to_repo(process_date):
     print('committing to repo')
-    subprocess.call(f'git commit -a -m "{process_date} data update"; git push origin master', shell=True)
+    today_date = datetime.datetime.now().strftime('%m-%d-%Y')     
+    subprocess.call(f'git commit -a -m "{today_date} data update"; git push origin master', shell=True)
 
 def command_verification(command):
     print('please review following commands')
@@ -151,7 +152,7 @@ def command_verification(command):
         return True
 
 def main():        
-    process_date = download_files()   
+    download_files()   
     if command_verification("Process the files?"):
         process_county_data()
         process_states_data()
