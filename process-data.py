@@ -137,7 +137,7 @@ def process_states_data():
     df_deaths.to_csv(death_datafile, encoding='utf-8')
     df_cases.to_csv(cases_datafile, encoding='utf-8')
 
-def commit_to_repo(process_date):
+def commit_to_repo():
     print('committing to repo')
     today_date = datetime.datetime.now().strftime('%m-%d-%Y')     
     subprocess.call(f'git commit -a -m "{today_date} data update"; git push origin master', shell=True)
@@ -152,12 +152,12 @@ def command_verification(command):
         return True
 
 def main():        
-    download_files()   
+    # download_files()   
     if command_verification("Process the files?"):
-        process_county_data()
-        process_states_data()
+        # process_county_data()
+        # process_states_data()
         if command_verification("Commit to Repo?"):
-            commit_to_repo(process_date)
+            commit_to_repo()
     print('finished')
 
 if __name__ == "__main__":
