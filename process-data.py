@@ -152,10 +152,10 @@ def command_verification(command):
         return True
 
 def main():        
-    # download_files()   
+    download_files()   
     if command_verification("Process the files?"):
-        # process_county_data()
-        # process_states_data()
+        process_county_data()
+        process_states_data()
         if command_verification("Commit to Repo?"):
             commit_to_repo()
     print('finished')
