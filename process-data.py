@@ -93,8 +93,10 @@ def process_states_data():
         daily_datafile = data_folder + file_date + '.csv'
         print(start_date)
         # load JH state files
-        df = pd.read_csv(daily_datafile, encoding='utf-8', index_col=False)
-
+        try:
+            df = pd.read_csv(daily_datafile, encoding='utf-8', index_col=False)
+        except:
+            break
         # filter only US rows
         df = df[df['Country_Region'] == 'US']
 
