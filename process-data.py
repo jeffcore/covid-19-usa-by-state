@@ -96,7 +96,9 @@ def process_states_data():
         try:
             df = pd.read_csv(daily_datafile, encoding='utf-8', index_col=False)
         except:
-            break
+            start_date += datetime.timedelta(days=1)
+            continue
+        
         # filter only US rows
         df = df[df['Country_Region'] == 'US']
 
