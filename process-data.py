@@ -157,11 +157,14 @@ def command_verification(command):
 
 def main():        
     download_files()   
-    if command_verification("Process the files?"):
-        process_county_data()
-        process_states_data()
-        if command_verification("Commit to Repo?"):
-            commit_to_repo()
+    process_county_data()
+    process_states_data()
+    commit_to_repo()
+    # if command_verification("Process the files?"):
+    #     process_county_data()
+    #     process_states_data()
+    #     if command_verification("Commit to Repo?"):
+    #         commit_to_repo()
     print('finished')
 
 if __name__ == "__main__":
