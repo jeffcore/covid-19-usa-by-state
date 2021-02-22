@@ -1,20 +1,22 @@
 # COVID-19
 
-COVID-19 data USA by States and Counties by day. State data from Johns Hopkins https://coronavirus.jhu.edu . County Data from NYT https://github.com/nytimes/covid-19-data .
+COVID-19 data USA by state and county by day. State data from Johns Hopkins https://coronavirus.jhu.edu . County Data from NYT https://github.com/nytimes/covid-19-data .
 
 ## John Hopkins Data by State
-The raw data from Johns Hopkins is organized by county, state, country. Also each day is a new file. This repo takes the  
-daily files and combines all the data into two csv files (confirmed cases and deaths). Daily data is cumulative counts, not new cases/deaths per day.  
+
+The raw data from Johns Hopkins is organized by county, state, country and each day is a new file. This repo takes the  
+daily files and combines all the data into two csv files (confirmed cases and deaths). Daily data is cumulative counts, not new cases/deaths per day.
 
 Rows: State Name  
-Columns: Date  
+Columns: Date
 
 ## NYT Data by County
+
 The raw data from NYT is organized by daily rows of date, county, state, values. This repo takes the  
-daily data and combines all the data into two csv files (confirmed cases and deaths). Daily data is cumulative counts, not new cases/deaths per day.  
+daily data and combines all the data into two csv files (confirmed cases and deaths). Daily data is cumulative counts, not new cases/deaths per day.
 
 Rows: FIPS, County, State  
-Columns: Date  
+Columns: Date
 
 Johns Hopkins provides a similar time-series by county in their repo.
 
