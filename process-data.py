@@ -125,7 +125,7 @@ def process_states_data():
         for index, row in df_daily_cases.iterrows():    
             if index in df_cases.index:
                 df_cases.at[index, daily_date] = row['Confirmed']  
-    
+
         # insert empty column for current date into summary file
         dft = pd.DataFrame({ daily_date :  np.array([0] * df_deaths.shape[0], dtype='int32'), })
         df_deaths.insert(df_deaths.shape[1], daily_date, dft.values)    
@@ -136,14 +136,16 @@ def process_states_data():
                 df_deaths.at[index, daily_date] = row['Deaths']   
 
         start_date += datetime.timedelta(days=1)
-            
+
     # save files
     df_deaths.to_csv(death_datafile, encoding='utf-8')
     df_cases.to_csv(cases_datafile, encoding='utf-8')
 
 def commit_to_repo():
     print('committing to repo')
-    today_date = datetime.datetime.now().strftime('%m-%d-%Y')     
+    today_date = datetime.datetime.now().strftime('%m-%d-%Y')
+    subprocess.call('git config user.name "jeffcore"', shell=True)
+    subprocess.call('git config user.email "rixempire@gmail.com"', shell=True)
     subprocess.call(f'git commit -a -m "{today_date} data update"; git push origin master', shell=True)
 
 def command_verification(command):
@@ -155,8 +157,8 @@ def command_verification(command):
     else:
         return True
 
-def main():        
-    download_files()   
+def main():
+    download_files()
     process_county_data()
     process_states_data()
     commit_to_repo()
